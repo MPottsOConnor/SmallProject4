@@ -1,2 +1,3 @@
 # SmallProject4
-Java servlet and jsp tasks - need server
+java servlets (src/ictgradschool) for handling input from WebContent/ the .jsp file. Will need a server to run, 
+but the code is still accessible. 

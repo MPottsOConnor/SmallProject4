@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>Folio4</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <!-- Question One -->
+<servlet>
+	<servlet-name>question1</servlet-name>
+	<servlet-class>ictgradschool.question1</servlet-class>
+	<!--
+	<init-param> 
+		<param-name>transaction-directory</param-name>
+		<param-value>C:\Users\#USERNAME#\workspace\Web-Portfolio-04\WebContent\Transactions\</param-value> 
+	</init-param>
+	-->
+</servlet>
+<servlet-mapping>
+	<servlet-name>question1</servlet-name>
+	<url-pattern>/question1</url-pattern>
+</servlet-mapping>
+<!-- Question Two -->
+<servlet>
+	<servlet-name>question2</servlet-name>
+	<servlet-class>ictgradschool.question2</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>question2</servlet-name>
+	<url-pattern>/question2</url-pattern>
+</servlet-mapping>
+<!-- Question Three -->
+<servlet>
+	<servlet-name>question3</servlet-name>
+	<servlet-class>ictgradschool.question3</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>question3</servlet-name>
+	<url-pattern>/question3</url-pattern>
+</servlet-mapping>
+</web-app>
+
+
+

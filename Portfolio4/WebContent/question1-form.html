@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Question 2</title>
+
+    <style>
+      fieldset, label {
+        padding: 6px;
+      }
+
+      label {
+        display: inline-block;
+        padding: 2px;
+        width: 140px;
+      }
+      
+      textarea, input {
+        padding: 3px;
+        margin: 8px;
+      }
+      
+    </style>
+  </head>
+  <body>
+    <form action="question1">
+    
+      <div> 
+	    <label for="refNum_id" >(*) Ref Number:</label> 
+	    <input id="refNum_id" name="refNum" type="text" size="6" maxlength="6" required="required"/>	  
+	  </div>
+	    
+      <fieldset> 
+    	<legend>Billing address</legend> 
+
+	    <div> 
+	      <label for="address_id" >(*) Address:</label> 
+            <textarea id="address_id" name="address" rows="5" required="required"></textarea>	  
+	    </div>
+	
+	    <div> 
+	      <label for="postCode_id">Post code:</label> 
+            <input id="postCode_id" name="postCode" type="text" size="4" maxlength="4" />	  
+	    </div>
+	    
+      </fieldset> 
+      
+      <fieldset> 
+	    <legend>Card details</legend> 
+	    <fieldset> 
+	      <legend>(*) Card type</legend> 
+	      <div class="card-type"> 
+            <input id="visa_id" name="cardType" type="radio" value="Visa" required="required" /> 
+            <label for="visa_id">VISA</label> 
+            <input id="mastercard_id" name="cardType" value="Mastercard" type="radio">
+            <label for="mastercard_id">Mastercard</label> 
+	      </div> 
+	    </fieldset>
+	
+	    <div> 
+          <label for="cardName_id" >(*) Name:</label>
+          <input id="cardName_id" name="cardName" type="text" size="40" required="required" />
+	    </div>
+
+	    <div> 
+          <label for="cardNo_id">(*) Card Number:</label>	  
+          <input id="cardNo_id1" name="cardNo1" type="text" required="required" size="4" maxlength="4" />
+	      <input id="cardNo_id2" name="cardNo2" type="text" required="required" size="4" maxlength="4" />
+	      <input id="cardNo_id3" name="cardNo3" type="text" required="required" size="4" maxlength="4" />
+	      <input id="cardNo_id4" name="cardNo4" type="text" required="required" size="4" maxlength="4" />
+	    </div>
+      </fieldset> 
+        
+      <fieldset> 
+  	    <div> 
+	      <button type=submit>Place Order</button> 
+	    </div> 
+      </fieldset> 
+    </form> 
+
+    
+  </body>
+</html>
